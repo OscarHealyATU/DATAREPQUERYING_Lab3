@@ -9,7 +9,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Read from './components/read';
+import Create from './components/create';
 function App() {
   const [count, setCount] = useState(0)
 
@@ -29,8 +31,8 @@ function App() {
         </Navbar>
         <Routes>
           <Route path='/' element={<Content></Content>}></Route>
-          <Route path='/read' element={<Header></Header>}></Route>
-          <Route path='/create' element={<Footer></Footer>}></Route>
+          <Route path='/read' element={<Read />}></Route>
+          <Route path='/create' element={<Create />}></Route>
         </Routes>
       </BrowserRouter>
     </>
