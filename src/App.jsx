@@ -12,6 +12,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Read from './components/read';
 import Create from './components/create';
+
+
 function App() {
   const [count, setCount] = useState(0)
 
